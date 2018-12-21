@@ -1,0 +1,221 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+/* navigation pane*/
+.head{
+	font-family:'Blanka';
+	font-size:30px;
+	position:fixed;
+	top:20px;
+	left:70px;
+	color: #DFDFDF;
+}
+.headimg{
+	position: fixed;
+	top:20px;
+	left:15px;
+}
+
+
+/* end navigation pane */
+
+.container{
+	background-color: #D1EDFF;
+    height: 110%;
+}
+#main{
+    position: absolute;
+    top:505;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+#onion{
+    position: absolute;
+    top:10px;
+    left: 130px;
+    transition: all .9s ease-in;
+}
+#peppermint{
+    position: absolute;
+    top:90px;
+    left: 640px;
+    transition: all .8s ease-in;
+    transition-delay: .15s;
+}
+#flour{
+    position: absolute;
+    top:150px;
+    left: 850px;
+    transition: all .7s ease-in;
+    transition-delay: .1s;
+}
+#gradient{
+    position: absolute;
+    top:265px;
+    left: 450px;
+    transition: all .7s ease-in;
+    transition-delay: .05s;
+}
+#garlic{
+    position: absolute;
+    top:20px;
+    left: 1075px;
+    transition: all .8s ease-in;
+    transition-delay: .1s;
+}
+#pappers{
+    position: absolute;
+    top:365px;
+    left: 1070px;
+    transition: all .8s ease-in;
+    transition-delay: .1s;
+}
+#chili{
+    position: absolute;
+    top: 555px;
+    left: 1060px;
+    transition: all .9s ease-in;
+    transition-delay: .15s;
+}
+#tomato{
+    position: absolute;
+    top:320px;
+    left: 110px;
+    transition: all 1s ease-in;
+    transition-delay: .15s;
+}
+#cheese{
+    position: absolute;
+    top:530px;
+    left: 170px;
+    transition: all .7s ease-in;
+    transition-delay: .15s;
+}
+
+/* MENU Bar */
+	#menuicon{
+		height: 25px;
+		width: 50px;
+		position: fixed;
+		top:50px;
+		right: 50px;
+		
+	}
+#menuicon:hover{
+	cursor:pointer;
+}
+#menuline{
+	height:6px;
+	width: 50px;
+	background-color: #9A9A9A;
+	position: absolute;
+	top:50%;
+	left:50%;
+	transform: translate(-50%,-50%);
+	transition: all .3s;
+	
+}
+#menuicon:hover #menuline{
+	width:40px;
+}
+#menuline:before{
+	content:'';
+	height:6px;
+	width:40px;
+	background-color: #9A9A9A;
+	position: absolute;
+	margin-top: 10px;
+	transition: all .3s;
+}
+
+#menuicon:hover #menuline::before{
+	width:50px;
+}
+#menuline:after{
+	content:'';
+	height:6px;
+	width:40px;
+	background-color: #9A9A9A;
+	position: absolute;
+	margin-top: -10px;
+	transition: all .3s;
+}
+
+#menuicon:hover #menuline::after{
+	width:50px;
+}
+#mainmenu{
+	height: 100vh;
+	width:300px;
+	background-color: royalblue;
+	-webkit-clip-path:polygon(0 0,100% 0,0% 100%,0% 100%);
+	position: fixed;
+	top: 0px;
+	left:-300px;
+	z-index: 999999;
+	transition: all .5s ease-in-out;
+	
+}
+ul{
+	list-style: none;
+	padding: 0px;
+	margin: 0px;
+	font-family: BRUSHTIPTRAVIS;
+	color: #fff;
+	font-size:18px ;
+	text-align: center;
+	font-weight: bolder;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	
+}
+ul a{
+	text-decoration: none;
+	color: #fff;
+}
+ul li{
+	margin: 20px;
+}
+ul li:hover{
+	cursor: pointer;
+}
+.line{
+	height: 2px;
+	width: 150px;
+	background-color: #fff;
+	margin-top: 10px;
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%);
+	transition: all .3s;
+	
+	
+}
+ul li:hover .line{
+	width:180px;
+}
+#logo{
+	font-family: blanka;
+	font-size: 25px;
+	color:#9E9E9E;
+	text-align: center;
+	position: absolute;
+	top:60px;
+	left: 50%;
+	transform: translate(-50%);
+}
+#close{
+	position: absolute;
+	bottom: 150px;
+	left: 50%;
+	transform: translate(-50%);
+	
+}
+#close:hover{
+	cursor: pointer;
+}
+/*Menu bar ends */
